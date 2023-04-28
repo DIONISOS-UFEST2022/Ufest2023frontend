@@ -1,0 +1,201 @@
+@use "src/index" as index;
+
+.preulympic-payment-container {
+    filter: brightness(1) contrast(90%);
+    background-image: url("./../../../Asset/Image/Background/PageUlympic.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .preulympic-payment-border {
+        position: absolute;
+        // kalo ada navbar
+        width: 140vh; //lebar
+        height: 80vh;
+        max-width: 190vh;
+
+        // width: 70%; //lebar
+        // height: 80%;
+        // max-width: 80%;
+        background-color: #fff4ee;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        background-repeat: no-repeat;
+        font-family: Louis George Cafe;
+        color: #903504;
+        // ada navbar turunin dikit
+        margin-top: 8vh;
+        border-radius: 20px;
+        opacity: 85%;
+
+        @media screen and (max-width: 1122px) {
+            width: 40vh;
+            height: 80vh;
+        }
+
+    .preulympic-payment-logo {
+        position: absolute;
+        top: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("./../../../Asset/Image/Ufest Logo/ufestlogocolor.webp");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100vh;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+
+        @media screen and (max-width: 1122px) {
+            width: 30vh;
+            height: 20vh;
+        }
+    }
+
+    .preulympic-payment-title {
+        position: absolute;
+        font-family: Louis George Cafe;
+        color: #903504;
+        font-size: 45px;
+        margin-bottom: 90px;
+        width: 65%;
+        text-align: center;
+        line-height: 50px;
+        font-style: italic;
+
+        @media screen and (max-width: 768px) {
+            letter-spacing: 0.05em;
+            font-size: 20px;
+            width: 70%;
+            line-height: 28px;
+        }
+    }
+
+        .preulympic-payment-bukti{
+            font-family: Louis George Cafe;
+            margin-top: 20%;
+            font-size: 30px;
+
+            @media screen and (max-width: 768px) {
+                text-align: center;
+                margin-top: 40%;
+                color: #903504;
+                font-size: 17px;
+                width: 30vh;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .preulympic-payment-file {
+        position: absolute;
+        border-radius: 20px;
+        margin-top: 40vh;
+        text-decoration: none;
+        margin-left: 20px;
+
+        button{
+            font-family: Louis George Cafe;
+            font-size: 17px;
+            width: 170px;
+            height: 40px;
+            color: #CC581A;
+            background-color: white;
+            border: 1px solid #CC5819;
+
+            &:hover {
+                cursor: pointer;
+                background: #ffffff;
+                box-shadow: 0 0 5px #CC5819,
+                            0 0 20px #ffffff,
+                            0 0 60px #ffffff;
+            }
+        }
+
+        @media screen and (max-width: 1122px) {
+
+            margin-top: 20vh;
+            width: 30vh;
+            align-items: center;
+            text-align: center;
+
+            button{
+                font-family: Louis George Cafe;
+                font-size: 12px;
+                width: 100px;
+                height: 40px;
+                margin-left: -1vh;
+                color: #CC581A;
+                background-color: white;
+                border: 1px solid #CC5819;
+            }
+        }
+    }
+
+    .preulympic-payment-Submit-button {
+        position: absolute;
+        border-radius: 20px;
+        margin-top: 36%;
+        text-decoration: none;
+        margin-left: 23px;
+        font-family: Rocket-Vintage;
+
+        button {
+            font-size: 30px;
+            border-radius: 50px;
+            border: 1px solid #ffffff;
+            background-color: #CC581A;
+            width: 170px;
+            height: 50px;
+            margin-left: 20px;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0 0 5px #CC5819,
+                            0 0 20px #CC581A,
+                            0 0 60px #CC581A;
+            }
+        }
+
+        @media screen and (max-width: 1122px){
+            align-items: center;
+            margin-top: 140%;
+            text-align: center;
+            width: 1%;
+            color: #ffff;
+
+            button {
+                font-size: 20px;
+                transform: translateX(-80%);
+                width: 100px;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 1122px){
+            align-items: center;
+            margin-top: 100%;
+            text-align: center;
+            width: 1%;
+            color: #ffff;
+
+            button {
+                font-size: 20px;
+                transform: translateX(-80%);
+                width: 100px;
+                text-align: center;
+            }
+        }
+    }
+}

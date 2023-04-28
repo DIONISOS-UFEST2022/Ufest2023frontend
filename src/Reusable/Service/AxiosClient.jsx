@@ -37,3 +37,18 @@ export function patchRequest(URL, payload) {
 export function deleteRequest(URL) {
     return axiosClient.delete(`/${URL}`).then(response => response);
 }
+
+export function UpostRequest(URL, payload) {
+    return axiosClient.post(`/${URL}`, payload).then(response => response);
+}
+
+export function postPreUlympicRegistration(payload) {
+    const formData = new FormData();
+    formData.append('teamName', payload.teamName);
+    formData.append('numberOfPlayers', payload.numberOfPlayers);
+    // menambahkan cookie pada payload
+    formData.append('namaTim', payload.namaTim);
+    formData.append('jumlahAnggota', payload.jumlahAnggota);
+
+    return axiosClient.post(`/${URL}`, formData).then((response) => response);
+}

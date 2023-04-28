@@ -1,0 +1,278 @@
+@use "src/index" as index;
+  //ngilangin arrow up down input type number
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+.preulympic-form-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./../../../Asset/Image/Background/PageUlympic.jpg");
+  background-size: cover;
+}
+
+.preulympic-form-page {
+  position: absolute;
+  // ada navbar
+  width: 150vh;
+  height: 80vh;
+  max-width: 150vh;
+  // height: 80%;
+  // max-width: 80%;
+  background-color: #fff4ee;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  background-repeat: no-repeat;
+  font-family: Louis George Cafe;
+  color: #903504;
+    // ada navbar
+  margin-top: 8vh;
+  border-radius: 20px;
+  opacity: 85%;
+
+  .preulympic-form-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-image: url("./../../../Asset/Image/Ufest Logo/ufestlogocolor.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20vh;
+    height: 20vh;
+
+    @media (max-width: 1280px) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      padding: 10px;
+      margin-top: 20px;
+      opacity: 1;
+    }
+  }
+
+  .preulympic-form-group {
+    width: 100%;
+    font-size: 10px;
+    text-align: left;
+    padding: 0.5rem;
+    margin-left: 10vh;
+    margin-bottom: -1vh;
+
+    label {
+      display: block;
+      font-size: 2em;
+      text-align: left;
+    }
+
+    input {
+      display: block;
+      width: 50vh;
+      padding: 0.5rem;
+      outline: 0;
+      border: 0;
+      background: transparent;
+      border-bottom: 1px solid #CC5819;
+      font-size: 2em;
+      
+      &:focus {
+        outline: none;
+        border-color: #CC5819;
+      }
+
+      &::placeholder {
+        color: #ccc;
+        opacity: 1;      
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 30vh;
+      font-size: 10px;
+      text-align: left;
+      padding: 0.5rem;
+      margin-left: 5vh;
+      margin-bottom: -2vh;
+      label{
+        font-size: 20px;
+      }
+
+      input {
+        width: 35vh;
+      }
+    }
+  }
+
+  .fotoktm{
+    width: 100%;
+    font-size: 10px;
+    text-align: left;
+    padding: 0.5rem;
+    margin-left: 10vh;
+    margin-bottom: -2.1vh;
+
+    label {
+      display: block;
+      font-size: 2em;
+      text-align: left;
+    }
+
+    input {
+      display: block;
+      width: 50vh;
+      padding: 0.5rem;
+      outline: 0;
+      border: 0;
+      background: transparent;
+      font-size: 2em;
+      
+      &:focus {
+        outline: none;
+        border-color: #CC5819;
+      }
+
+      &::placeholder {
+        color: #ccc;
+        opacity: 1;      
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 30vh;
+      font-size: 10px;
+      text-align: left;
+      padding: 0.5rem;
+      margin-left: 5vh;
+      margin-bottom: -2vh;
+      label{
+        font-size: 20px;
+      }
+
+      input {
+        width: 35vh;
+      }
+    }
+  }
+
+  .buktijoin{
+    width: 100%;
+    font-size: 10px;
+    text-align: left;
+    padding: 0.5rem;
+    margin-left: 10vh;
+    margin-bottom: -2.1vh;
+
+    label {
+      display: block;
+      font-size: 2em;
+      text-align: left;
+    }
+
+    input {
+      display: block;
+      width: 50vh;
+      padding: 0.5rem;
+      outline: 0;
+      border: 0;
+      background: transparent;
+      font-size: 2em;
+      
+      &:focus {
+        outline: none;
+        border-color: #CC5819;
+      }
+
+      &::placeholder {
+        color: #ccc;
+        opacity: 1;      
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 30vh;
+      font-size: 10px;
+      text-align: left;
+      padding: 0.5rem;
+      margin-left: 5vh;
+      margin-bottom: -2vh;
+      label{
+        font-size: 20px;
+      }
+
+      input {
+        width: 35vh;
+      }
+    }
+  }
+}
+
+button{
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #CC581A;
+  color: #fff;
+  margin-top: 1rem;
+  width: 14%;
+  height: 10%;
+  border-radius: 20px;
+  margin-right: 2em;
+  margin-left: auto;
+  font-size: 30px;
+  font-family: Rocket-Vintage;
+  background-color: #e0895a;
+  border: 2px solid #ffffff;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: #CC5819;
+    box-shadow: 0 0 5px #CC5819,
+                0 0 20px #CC5819,
+                0 0 60px #CC5819;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #c79242;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  @media screen and (max-width: 960px) {
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    border-radius: 50px;
+    background-color: #CC5819;
+  }
+}
+
+@media (max-width: 768px) {
+  .preulympic-form-page {
+    width: 80%;
+  }
+
+  .preulympic-form-group {
+    input {
+      width: 100%;
+      font-size: 1rem;
+    }
+    .preulympic-form-error-message {
+      font-size: 1rem;
+    }
+  }
+}

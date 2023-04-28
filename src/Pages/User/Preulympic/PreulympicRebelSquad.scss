@@ -1,0 +1,169 @@
+@use "src/index" as index;
+
+.preulympic-rebel-squad-container {
+  filter: brightness(1) contrast(90%);
+  background-image: url("./../../../Asset/Image/Background/PageUlympic.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+
+  .preulympic-rebel-squad-border {
+    position: absolute;
+    //with navbar
+    width: 140vh; //lebar
+    height: 80vh; // tinggi
+    max-width: 140vh;
+
+    // width: 70%; //lebar
+    // height: 80%;
+    // max-width: 80%;
+    background-color: #fff4ee;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-repeat: no-repeat;
+    font-family: Louis George Cafe;
+    color: #903504;
+    //with navbar
+    margin-top: 8vh;
+    border-radius: 20px;
+    opacity: 85%;
+
+    @media (max-width: 1122px){
+      width: 35vh;
+      height: 75vh;
+    }
+
+    .preulympic-rebel-squad-logo {
+      position: absolute;
+      top: 5vh;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("./../../../Asset/Image/Ufest Logo/ufestlogocolor.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 100vh;
+      height: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;
+
+      @media screen and (max-width: 1122px) {
+        width: 20vh;
+        height: 20vh;
+      }
+    }
+
+    .preulympic-rebel-squad-title {
+      position: absolute;
+      font-family: Louis George Cafe;
+      font-size: 42px;
+      color: #903504;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      width: 80%;
+      text-align: center;
+      line-height: 60px;
+
+      @media (max-width: 768px){
+        //with navbar
+        font-size: 20px;
+        width: 30vh;
+        line-height: 30px;
+        // font-size: 17px;
+        // width: 68%;
+        // line-height: 30px;
+      }
+
+      // @media only screen and (min-width: 600px) {
+      //   font-size: 30px;
+      //   width: 40vh;
+      //   line-height: 45px;
+      // }
+
+    }
+  }
+  
+  .preulympic-rebel-squad-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Louis George Cafe;
+    position: absolute;
+    background-color: white;
+    width: 35%;
+    height: 7%;
+    color: #CC581A;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid #CC5819;
+    margin-top: 24%;
+    font-style: italic;
+    text-decoration: none;
+
+    &:hover {
+      box-shadow: 0 0 5px #ffffff,
+                  0 0 20px #ffffff,
+                  0 0 60px #ffffff;
+    }
+
+    @media screen and (max-width: 1122px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      margin-top: 75%;
+      width: 60%;
+      height: 4%;
+    }
+  }
+
+  .preulympic-rebel-squad-next-button {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    font-family: Rocket-Vintage;
+    width: 80%;
+  
+    button {
+      font-size: 30px;
+      padding: 7px 10px;
+      border-radius: 50px;
+      border: 1px solid #ffffff;
+      margin-bottom: 20px;
+      background-color: #CC581A;
+
+      &:hover {
+        cursor: pointer;
+        background: #CC5819;
+        box-shadow: 0 0 5px #CC5819,
+                    0 0 20px #CC5819,
+                    0 0 60px #CC5819;
+      }
+    }
+
+    @media screen and (max-width: 1122px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      width: 91%;
+      height: 91%;
+    
+      button {
+        background-color: #CC5819;
+      }
+    }
+  }
+}

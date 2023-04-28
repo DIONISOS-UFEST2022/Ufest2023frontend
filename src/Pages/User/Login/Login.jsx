@@ -1,9 +1,6 @@
 // Styling
 import "./Login.scss";
-import {
-    Box,
-    CircularProgress,
-} from "../../../Reusable/MaterialUICoreLazy/MaterialUICoreLazy";
+import { Box, CircularProgress,} from "../../../Reusable/MaterialUICoreLazy/MaterialUICoreLazy";
 import Alert from '@mui/material/Alert';
 import { Divider } from "@mui/material";
 import Button from "../../../Reusable/Button/Button.jsx";
@@ -20,7 +17,6 @@ import { CustomTextField } from "../../../Reusable/TextField/CustomTextField";
 import { Helmet } from "react-helmet-async";
 import Sparkles from "../../../Reusable/Animation/Sparkle/Sparkle";
 
-
 // this is main function
 export default function Login() {
     // state
@@ -30,7 +26,7 @@ export default function Login() {
     }, []);
     const [loading, Setloading] = useState(false);
     // error handling
-    const [error, Seterror] = useState(false);
+    const [error, Seterror] = useState();
     const [errorText, SeterrorText] = useState("");
     const dispatch = useDispatch();
     // animation
